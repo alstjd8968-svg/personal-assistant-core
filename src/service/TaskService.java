@@ -40,4 +40,14 @@ public class TaskService {
         }
         return false;
     }
+
+    // Task 다시 열기 - Task의 reopen(), isCompleted()만 사용
+    public boolean reopenTask(long id) {
+        Task task = getTaskById(id);
+        if (task != null && task.isCompleted()) {
+            task.reopen();
+            return true;
+        }
+        return false;
+    }
 }

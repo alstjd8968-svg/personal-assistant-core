@@ -39,19 +39,26 @@ public class Task {
             this.description = description;
         }
 
-        /**
-         * 완료 여부 반환
-         */
-        public boolean isCompleted() {
-            return isCompleted;
-        }
+    /**
+     * 완료 여부 반환
+     */
+    public boolean isCompleted() {
+        return isCompleted;
+    }
 
-        /**
-         * 할 일을 완료 처리
-         */
-        public void complete() {
-            this.isCompleted = true;
-        }
+    /**
+     * 할 일을 완료 처리
+     */
+    public void complete() {
+        this.isCompleted = true;
+    }
+
+    /**
+     * 완료 처리된 할 일을 다시 미완료 상태로 되돌립니다.
+     */
+    public void reopen() {
+        this.isCompleted = false;
+    }
 
     /**
      * 고유 식별자 반환
