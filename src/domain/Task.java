@@ -1,9 +1,10 @@
+package domain;
+
+/**
+ * 사용자의 계획(할 일)을 표현하는 Task 도메인 객체.
+ * 최소한의 책임과 필드만을 가집니다.
+ */
 public class Task {
-    /**
-     * 사용자의 계획(할 일)을 표현하는 Task 도메인 객체.
-     * 최소한의 책임과 필드만을 가집니다.
-     */
-    public class Task {
         // 고유 식별자 (자동 생성되거나, 시스템에 의해 할당됨)
         private final long id;
 
@@ -52,11 +53,10 @@ public class Task {
             this.isCompleted = true;
         }
 
-        /**
-         * 고유 식별자 반환
-         */
-        public long getId() {
-            return id;
-        }
+    /**
+     * 고유 식별자 반환
+     */
+    public long getId() {
+        return id;
     }
 }
